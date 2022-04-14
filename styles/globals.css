@@ -1,6 +1,11 @@
 html,
 body,
 #root,
+
+.container {
+  height: 100vh;
+}
+
 .App {
   margin: 0;
   height: 100vh;
