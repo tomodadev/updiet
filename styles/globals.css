@@ -8,7 +8,9 @@ body,
 
 .App {
   margin: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+
 }
 
 .App {
@@ -21,3 +23,19 @@ body,
   flex: 1;
 }
 
+
+.app-container {
+  flex: 1;
+  height: 50vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.footer {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}

@@ -92,7 +92,7 @@ const FatChart = ({ priceData }) => {
 
   return (
     <div className="App">
-      <div ref={chartContainerRef} className="chart-container" />;
+      <div ref={chartContainerRef} className="chart-container" />
     </div>
   );
 };
