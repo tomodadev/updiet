@@ -14,7 +14,7 @@ export default async function handle(req, res) {
     //   },
     // });
 
-    const result = await prisma.User.findMany();
+    const result = await prisma.Post.findMany();
     res.status(200).json(result);
   } catch (e) {
     console.error(e);

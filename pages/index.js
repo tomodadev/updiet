@@ -14,10 +14,11 @@ export const getServerSideProps = async () => {
   const data = await res.json();
   console.log("!!!!");
 
-  return { props: { data: { ...data } } };
+  // return { props: { data: { ...data } } };
+  return { props: { post: [...data] } };
 };
 
 export default function App(props) {
-  console.log(props.data);
-  return <FatChart></FatChart>;
+  console.log(props);
+  return <FatChart priceData={props.post}></FatChart>;
 }

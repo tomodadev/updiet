@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { createChart, CrosshairMode } from "lightweight-charts";
-import { priceData } from "constants/priceData";
+// import { priceData } from "constants/priceData";
 // import { areaData } from './areaData';
 import { volumeData } from "constants/volumeData";
 
-const FatChart = () => {
+const FatChart = ({ priceData }) => {
   const chartContainerRef = useRef();
   const chart = useRef();
   const resizeObserver = useRef();
@@ -71,7 +71,6 @@ const FatChart = () => {
           bottom: 0,
         },
       });
-      console.log("fuck me");
       volumeSeries.setData(volumeData);
     }
   }, []);
